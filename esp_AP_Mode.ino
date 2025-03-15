@@ -10,7 +10,7 @@ void setup() {
     // wifiManager.resetSettings();
     
     // AutoConnect with a custom AP name
-    if (!wifiManager.autoConnect("ESP_Config")) {
+    if (!wifiManager.autoConnect("ESP_Config", "ESP_01_Password")) {
         Serial.println("Failed to connect. Restarting...");
         ESP.restart();
     }
